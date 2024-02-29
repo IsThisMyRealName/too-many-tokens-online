@@ -1,0 +1,26 @@
+MinotaurFemale (1).webp
+MinotaurFemale (2).webp
+MinotaurFemale (3).webp
+MinotaurFemale (4).webp
+MinotaurFemale (5).webp
+MinotaurFemale (6).webp
+MinotaurFemale (7).webp
+MinotaurMale (1).webp
+MinotaurMale (10).webp
+MinotaurMale (11).webp
+MinotaurMale (12).webp
+MinotaurMale (13).webp
+MinotaurMale (14).webp
+MinotaurMale (15).webp
+MinotaurMale (16).webp
+MinotaurMale (17).webp
+MinotaurMale (18).webp
+MinotaurMale (2).webp
+MinotaurMale (3).webp
+MinotaurMale (4).webp
+MinotaurMale (5).webp
+MinotaurMale (6).webp
+MinotaurMale (7).webp
+MinotaurMale (8).webp
+MinotaurMale (9).webp
+Prompts.txt

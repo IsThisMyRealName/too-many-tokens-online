@@ -1,0 +1,23 @@
+BlackBearAgressive (1).webp
+BlackBearAgressive (10).webp
+BlackBearAgressive (11).webp
+BlackBearAgressive (2).webp
+BlackBearAgressive (3).webp
+BlackBearAgressive (4).webp
+BlackBearAgressive (5).webp
+BlackBearAgressive (6).webp
+BlackBearAgressive (7).webp
+BlackBearAgressive (8).webp
+BlackBearAgressive (9).webp
+BlackBearCalm (1).webp
+BlackBearCalm (10).webp
+BlackBearCalm (11).webp
+BlackBearCalm (2).webp
+BlackBearCalm (3).webp
+BlackBearCalm (4).webp
+BlackBearCalm (5).webp
+BlackBearCalm (6).webp
+BlackBearCalm (7).webp
+BlackBearCalm (8).webp
+BlackBearCalm (9).webp
+Prompts.txt

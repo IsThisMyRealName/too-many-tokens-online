@@ -1,0 +1,23 @@
+Prompts.txt
+WillOWispBlue (1).webp
+WillOWispBlue (2).webp
+WillOWispBlue (3).webp
+WillOWispBlue (4).webp
+WillOWispBlue (5).webp
+WillOWispBlue (6).webp
+WillOWispBlue (7).webp
+WillOWispGreen (1).webp
+WillOWispGreen (10).webp
+WillOWispGreen (2).webp
+WillOWispGreen (3).webp
+WillOWispGreen (4).webp
+WillOWispGreen (5).webp
+WillOWispGreen (6).webp
+WillOWispGreen (7).webp
+WillOWispGreen (8).webp
+WillOWispGreen (9).webp
+WillOWispRed (1).webp
+WillOWispRed (2).webp
+WillOWispRed (3).webp
+WillOWispRed (4).webp
+WillOWispWhite (1).webp

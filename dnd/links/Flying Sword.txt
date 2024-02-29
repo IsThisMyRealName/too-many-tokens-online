@@ -1,0 +1,22 @@
+FlyingMace (1).webp
+FlyingMace (10).webp
+FlyingMace (11).webp
+FlyingMace (2).webp
+FlyingMace (3).webp
+FlyingMace (4).webp
+FlyingMace (5).webp
+FlyingMace (6).webp
+FlyingMace (7).webp
+FlyingMace (8).webp
+FlyingMace (9).webp
+FlyingSword (1).webp
+FlyingSword (10).webp
+FlyingSword (2).webp
+FlyingSword (3).webp
+FlyingSword (4).webp
+FlyingSword (5).webp
+FlyingSword (6).webp
+FlyingSword (7).webp
+FlyingSword (8).webp
+FlyingSword (9).webp
+Prompts.txt

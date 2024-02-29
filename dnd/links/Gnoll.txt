@@ -1,0 +1,27 @@
+GnollBow (1).webp
+GnollBow (2).webp
+GnollBow (3).webp
+GnollBow (4).webp
+GnollBow (5).webp
+GnollBow (6).webp
+GnollSpear (1).webp
+GnollSpear (10).webp
+GnollSpear (11).webp
+GnollSpear (12).webp
+GnollSpear (13).webp
+GnollSpear (14).webp
+GnollSpear (15).webp
+GnollSpear (16).webp
+GnollSpear (17).webp
+GnollSpear (18).webp
+GnollSpear (19).webp
+GnollSpear (2).webp
+GnollSpear (20).webp
+GnollSpear (3).webp
+GnollSpear (4).webp
+GnollSpear (5).webp
+GnollSpear (6).webp
+GnollSpear (7).webp
+GnollSpear (8).webp
+GnollSpear (9).webp
+Prompts.txt

@@ -1,0 +1,23 @@
+GoatGrassland (1).webp
+GoatGrassland (2).webp
+GoatGrassland (3).webp
+GoatGrassland (4).webp
+GoatGrassland (5).webp
+GoatHill (1).webp
+GoatHill (2).webp
+GoatHill (3).webp
+GoatMountain (1).webp
+GoatMountain (2).webp
+GoatMountain (3).webp
+GoatMountain (4).webp
+GoatMountain (5).webp
+GoatMountain (6).webp
+GoatMountain (7).webp
+GoatUrban (1).webp
+GoatUrban (2).webp
+GoatUrban (3).webp
+GoatUrban (4).webp
+GoatUrban (5).webp
+GoatUrban (6).webp
+GoatUrban (7).webp
+Prompts.txt

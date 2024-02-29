@@ -1,0 +1,24 @@
+Prompts.txt
+WaterElementalSea (1).webp
+WaterElementalSea (2).webp
+WaterElementalSea (3).webp
+WaterElementalSea (4).webp
+WaterElementalSea (5).webp
+WaterElementalSea (6).webp
+WaterElementalSea (7).webp
+WaterElementalSea (8).webp
+WaterElementalSwamp (1).webp
+WaterElementalSwamp (2).webp
+WaterElementalSwamp (3).webp
+WaterElementalSwamp (4).webp
+WaterElementalSwamp (5).webp
+WaterElementalSwamp (6).webp
+WaterElementalSwamp (7).webp
+WaterElementalSwamp (8).webp
+WaterElementalWaterfall (1).webp
+WaterElementalWaterfall (2).webp
+WaterElementalWaterfall (3).webp
+WaterElementalWaterfall (4).webp
+WaterElementalWaterfall (5).webp
+WaterElementalWaterfall (6).webp
+WaterElementalWaterfall (7).webp

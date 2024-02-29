@@ -1,0 +1,15 @@
+GelatinousCubeInvisible (1).webp
+GelatinousCubeInvisible (2).webp
+GelatinousCubeTransparent (1).webp
+GelatinousCubeTransparent (2).webp
+GelatinousCubeTransparent (3).webp
+GelatinousCubeVisible (1).webp
+GelatinousCubeVisible (2).webp
+GelatinousCubeVisible (3).webp
+GelatinousCubeVisible (4).webp
+GelatinousCubeVisible (5).webp
+GelatinousCubeVisible (6).webp
+GelatinousCubeVisible (7).webp
+GelatinousCubeVisible (8).webp
+GelatinousCubeVisible (9).webp
+Prompts.txt

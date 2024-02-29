@@ -1,0 +1,24 @@
+GiantWolfSpiderDesert (1).webp
+GiantWolfSpiderDesert (10).webp
+GiantWolfSpiderDesert (11).webp
+GiantWolfSpiderDesert (12).webp
+GiantWolfSpiderDesert (2).webp
+GiantWolfSpiderDesert (3).webp
+GiantWolfSpiderDesert (4).webp
+GiantWolfSpiderDesert (5).webp
+GiantWolfSpiderDesert (6).webp
+GiantWolfSpiderDesert (7).webp
+GiantWolfSpiderDesert (8).webp
+GiantWolfSpiderDesert (9).webp
+GiantWolfSpiderForest (1).webp
+GiantWolfSpiderForest (10).webp
+GiantWolfSpiderForest (11).webp
+GiantWolfSpiderForest (2).webp
+GiantWolfSpiderForest (3).webp
+GiantWolfSpiderForest (4).webp
+GiantWolfSpiderForest (5).webp
+GiantWolfSpiderForest (6).webp
+GiantWolfSpiderForest (7).webp
+GiantWolfSpiderForest (8).webp
+GiantWolfSpiderForest (9).webp
+Prompts.txt
