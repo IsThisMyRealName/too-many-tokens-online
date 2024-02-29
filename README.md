@@ -3,24 +3,24 @@
 <p>Explore a vast array of tokens tailored to your needs, accessible at your fingertips through our dedicated website: <a target="_new" href="https://toomanytokens.com">TooManyTokens.com</a>.</p>
 <p>Key Features:</p>
 <ul>
-	<li>
-		<strong>Macro Functionality</strong>: Effortlessly apply a plethora of tokens to your selected assets using a user-friendly macro interface.</li>
-	<li>
-		<strong>Versatile Usage</strong>: Whether you're running Dungeons &amp; Dragons, Pathfinder, or any other system, these tokens are ready for action.</li>
+ <li>
+  <strong>Macro Functionality</strong>: Effortlessly apply a plethora of tokens to your selected assets using a user-friendly macro interface.</li>
+ <li>
+  <strong>Versatile Usage</strong>: Whether you're running Dungeons &amp; Dragons, Pathfinder, or any other system, these tokens are ready for action.</li>
 </ul>
 <p>Not sure if this module or Too-Many-Tokens-DND is right for you? Here's a quick breakdown:</p>
 <p>Pros:</p>
 <ul>
-	<li>
-		<strong>Compact File Size</strong>: Occupying less than 1MB of space, this module is ideal for users with storage constraints or utilizing hosting platforms like Forge.</li>
-	<li>
-		<strong>Unified Collection</strong>: Future updates will seamlessly incorporate Too-Many-Tokens-PF content, ensuring a comprehensive token library.</li>
+ <li>
+  <strong>Compact File Size</strong>: Occupying less than 1MB of space, this module is ideal for users with storage constraints or utilizing hosting platforms like Forge.</li>
+ <li>
+  <strong>Unified Collection</strong>: Future updates will seamlessly incorporate Too-Many-Tokens-PF content, ensuring a comprehensive token library.</li>
 </ul>
 <p>Cons:</p>
 <ul>
-	<li>
-		<strong>Manual Application</strong>: Unlike Too-Many-Tokens-DND, this module does not support automatic wildcard application for drag-and-drop token placement. Instead, you'll need to rerun the macro for each new token.</li>
-	<li>
-		<strong>Online Dependency</strong>: As tokens are hosted externally, an internet connection is required for access.</li>
+ <li>
+  <strong>Manual Application</strong>: Unlike Too-Many-Tokens-DND, this module does not support automatic wildcard application for drag-and-drop token placement. Instead, you'll need to rerun the macro for new tokens.</li>
+ <li>
+  <strong>Online Dependency</strong>: As tokens are hosted externally, an internet connection is required for access.</li>
 </ul>
 <p>Discover the limitless possibilities with the Online Too-Many-Tokens Module and elevate your virtual tabletop adventures to new heights.</p>
