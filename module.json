@@ -15,6 +15,8 @@
     }
   ],
   "url": "https://github.com/IsThisMyRealName/too-many-tokens-online",
+  "manifest": "https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-online/main/module.json",
+  "download": "https://github.com/IsThisMyRealName/too-many-tokens-online/archive/refs/tags/1.0.0.zip"
   "packs": [
     {
       "name": "too-many-tokens-online-macros",
