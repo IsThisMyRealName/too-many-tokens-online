@@ -321,7 +321,6 @@ Swarm of Wasps
 Thri-kreen
 Thug
 Tiger
-Token
 Treant
 Tribal Warrior
 Triceratops
