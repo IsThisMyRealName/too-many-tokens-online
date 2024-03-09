@@ -1,26 +1,23 @@
+ClayGolem (1).webp
+ClayGolem (10).webp
+ClayGolem (11).webp
+ClayGolem (12).webp
+ClayGolem (13).webp
+ClayGolem (14).webp
+ClayGolem (15).webp
+ClayGolem (16).webp
+ClayGolem (17).webp
+ClayGolem (18).webp
+ClayGolem (19).webp
+ClayGolem (2).webp
+ClayGolem (20).webp
+ClayGolem (21).webp
+ClayGolem (22).webp
+ClayGolem (3).webp
+ClayGolem (4).webp
+ClayGolem (5).webp
+ClayGolem (6).webp
+ClayGolem (7).webp
+ClayGolem (8).webp
+ClayGolem (9).webp
 Prompts.txt
-token_1.webp
-token_10.webp
-token_11.webp
-token_12.webp
-token_13.webp
-token_14.webp
-token_15.webp
-token_16.webp
-token_17.webp
-token_18.webp
-token_19.webp
-token_2.webp
-token_20.webp
-token_21.webp
-token_22.webp
-token_23.webp
-token_24.webp
-token_25.webp
-token_3.webp
-token_4.webp
-token_5.webp
-token_6.webp
-token_7.webp
-token_8.webp
-token_9.webp
