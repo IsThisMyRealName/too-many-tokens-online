@@ -1,4 +1,8 @@
-import { getTokenLinksFromPath } from "./helperFunctions.js";
+import {
+  getTokenLinksFromPath,
+  applyRandomTokenImages,
+  getSystemFromWildcardPath,
+} from "./helperFunctions.js";
 class TooManyTokensOnline {}
 
 /**
@@ -22,7 +26,11 @@ Hooks.on("ready", () => {
 
     const tokenName = baseActor.prototypeToken.texture.src;
     ui.notifications.info(`Found ${tokenName}`);
-    getTokenLinksFromPath(tokenName);
+    await applyRandomTokenImages(
+      tokenDocument,
+      getSystemFromWildcardPath(tokenName),
+      await getTokenLinksFromPath(tokenDocument, tokenName)
+    );
   });
 });
 
