@@ -25,5 +25,6 @@
 			"ASSISTANT": "OWNER"
 		},
 		"flags": {}
-	}]
+	}],
+	"esmodules": ["scripts/index.js"]
 }
