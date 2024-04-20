@@ -1,24 +1,24 @@
-Cloud Giant Female (1).webp
-Cloud Giant Female (2).webp
-Cloud Giant Female (3).webp
-Cloud Giant Female (4).webp
-Cloud Giant Female (5).webp
-Cloud Giant Female (6).webp
-Cloud Giant Female (7).webp
-Cloud Giant Female (8).webp
-Cloud Giant Male (1).webp
-Cloud Giant Male (10).webp
-Cloud Giant Male (11).webp
-Cloud Giant Male (12).webp
-Cloud Giant Male (13).webp
-Cloud Giant Male (14).webp
-Cloud Giant Male (15).webp
-Cloud Giant Male (2).webp
-Cloud Giant Male (3).webp
-Cloud Giant Male (4).webp
-Cloud Giant Male (5).webp
-Cloud Giant Male (6).webp
-Cloud Giant Male (7).webp
-Cloud Giant Male (8).webp
-Cloud Giant Male (9).webp
+CloudGiantFemale (1).webp
+CloudGiantFemale (2).webp
+CloudGiantFemale (3).webp
+CloudGiantFemale (4).webp
+CloudGiantFemale (5).webp
+CloudGiantFemale (6).webp
+CloudGiantFemale (7).webp
+CloudGiantFemale (8).webp
+CloudGiantMale (1).webp
+CloudGiantMale (10).webp
+CloudGiantMale (11).webp
+CloudGiantMale (12).webp
+CloudGiantMale (13).webp
+CloudGiantMale (14).webp
+CloudGiantMale (15).webp
+CloudGiantMale (2).webp
+CloudGiantMale (3).webp
+CloudGiantMale (4).webp
+CloudGiantMale (5).webp
+CloudGiantMale (6).webp
+CloudGiantMale (7).webp
+CloudGiantMale (8).webp
+CloudGiantMale (9).webp
 Prompts.txt
