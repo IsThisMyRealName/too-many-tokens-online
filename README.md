@@ -7,6 +7,9 @@
   <strong>Macro Functionality</strong>: Effortlessly apply a plethora of tokens to your selected assets using a user-friendly macro interface.</li>
  <li>
   <strong>Versatile Usage</strong>: Whether you're running Dungeons &amp; Dragons, Pathfinder, or any other system, these tokens are ready for action.</li>
+  <li>
+    <strong>Online Wildcard Functionality</strong>: You can now use the macro to apply Wildcardlinks, without having to download the images.
+  </li>
 </ul>
 <p>Not sure if this module or Too-Many-Tokens-DND is right for you? Here's a quick breakdown:</p>
 <p>Pros:</p>
@@ -18,8 +21,6 @@
 </ul>
 <p>Cons:</p>
 <ul>
- <li>
-  <strong>Manual Application</strong>: Unlike Too-Many-Tokens-DND, this module does not support automatic wildcard application for drag-and-drop token placement. Instead, you'll need to rerun the macro for new tokens.</li>
  <li>
   <strong>Online Dependency</strong>: As tokens are hosted externally, an internet connection is required for access.</li>
 </ul>
