@@ -129,11 +129,17 @@ function renderDialog(options) {
                     const selectedPaths = lines.filter((link) =>
                       regex.test(link)
                     );
-                    applyRandomTokenImages(selectedActor, selectedPaths);
+                    if (selectedPaths.length <= 0) {
+                      ui.notifications.warn(
+                        `Could not find links with regex ${regex}. Please select other attributes.`
+                      );
+                    } else {
+                      applyRandomTokenImages(selectedActor, selectedPaths);
+                    }
                   },
                 },
                 assignPrototypeTokens: {
-                  label: "Assign Too-Many-Tokens to prototype tokens",
+                  label: "Assign Too-Many-Tokens to prototype token",
                   callback: async () => {
                     const selectedTokens = canvas.tokens.controlled;
                     if (selectedTokens.length !== 1) {

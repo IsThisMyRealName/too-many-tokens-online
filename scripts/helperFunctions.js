@@ -20,16 +20,28 @@ export async function getTokenLinksFromPath(token, potentialWildcardPath) {
 
   // Use await to wait for the promise to resolve
   let links = await getLinksForCreatures(system, creatures, regex);
-  applyRandomTokenImages(
-    token,
-    system,
-    links.filter((link) => regex.test(link))
-  );
+  console.log(links);
+  // applyRandomTokenImages(
+  //   token,
+  //   system,
+  //   links.filter((link) => regex.test(link))
+  // );
+  return links;
 }
 
+export function removePathPrefix(imagePath) {
+  return imagePath.replace(tooManyTokensOnlinePathPrefix, "");
+}
 export function getSystemFromWildcardPath(wildcardPath) {
-  let wildcardPathParts = wildcardPath.split(seperator1).filter((part) => part);
+  let wildcardPathParts = removePathPrefix(wildcardPath)
+    .split(seperator1)
+    .filter((part) => part);
   return wildcardPathParts[0];
+}
+
+export function getCreatureNamesFromWildcardPath(wildcardPath) {
+  let wildcardPathParts = wildcardPath.split(seperator1).filter((part) => part);
+  return wildcardPathParts[1].split(seperator2).filter((creature) => creature);
 }
 
 export async function getLinksForCreatures(system, creatureNames) {
@@ -115,9 +127,6 @@ function removeLinesEndingWithTxt(text) {
 export async function applyRandomTokenImages(tokenDocument, system, links) {
   const imageChoice = Math.floor(Math.random() * links.length);
   const image = links[imageChoice];
-  console.log(
-    `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${image}`
-  );
   try {
     await tokenDocument.update({
       "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${image}`,
@@ -128,30 +137,36 @@ export async function applyRandomTokenImages(tokenDocument, system, links) {
   }
 }
 
+export function createTmtoWildcardImagePath(system, creatureName, regex) {
+  return [tooManyTokensOnlinePathPrefix, system, creatureName, regex].join(
+    seperator1
+  );
+}
+
 export async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
   const tokenDocument = await actor.getTokenDocument();
   const actorId = tokenDocument.actorId;
   let baseActor = game.actors.get(actorId);
 
-  const oldImgPath = baseActor.prototypeToken.texture.src;
-  const wasRandomImgBefore = baseActor.prototypeToken.randomImg;
-  let tokenImgArray = null;
-  await baseActor
-    .update({
-      "prototypeToken.texture.src": wildcardPath,
-      "prototypeToken.randomImg": true,
-    })
-    .then((tokenImgArray = await baseActor.getTokenImages()));
-  tokenImgArray = await baseActor.getTokenImages();
-  if (tokenImgArray != null && tokenImgArray.length > 0) {
-    ui.notifications.info(
-      `Found ${tokenImgArray.length} images for "${wildcardPath}"`
+  try {
+    // Fetch the token images for the specified wildcard path
+    let tokenImgArray = await getLinksForCreatures(
+      getSystemFromWildcardPath(wildcardPath),
+      getCreatureNamesFromWildcardPath(wildcardPath)
     );
-  } else {
-    ui.notifications.warn(`No images found for "${wildcardPath}".`);
-    await baseActor.update({
-      "prototypeToken.texture.src": oldImgPath,
-      "prototypeToken.randomImg": wasRandomImgBefore,
-    });
+    if (tokenImgArray && tokenImgArray.length > 0) {
+      ui.notifications.info(
+        `Found ${tokenImgArray.length} images for "${wildcardPath}"`
+      );
+      // Update the prototype token with the wildcard path
+      await baseActor.update({
+        "prototypeToken.texture.src": wildcardPath,
+        "prototypeToken.randomImg": true,
+      });
+    } else {
+      ui.notifications.warn(`No images found for "${wildcardPath}".`);
+    }
+  } catch (error) {
+    ui.notifications.error(`Error applying wildcard path: ${error.message}`);
   }
 }

@@ -12,7 +12,6 @@ class TooManyTokensOnline {}
 
 Hooks.once("init", () => {
   // add the API
-  console.log("Test1");
   game.toomanytokensonline = new TooManyTokensOnline();
 });
 
@@ -26,10 +25,11 @@ Hooks.on("ready", () => {
 
     const tokenName = baseActor.prototypeToken.texture.src;
     ui.notifications.info(`Found ${tokenName}`);
+    const links = await getTokenLinksFromPath(tokenDocument, tokenName);
     await applyRandomTokenImages(
       tokenDocument,
       getSystemFromWildcardPath(tokenName),
-      await getTokenLinksFromPath(tokenDocument, tokenName)
+      links
     );
   });
 });
