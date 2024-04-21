@@ -8,7 +8,7 @@
  <li>
   <strong>Versatile Usage</strong>: Whether you're running Dungeons &amp; Dragons, Pathfinder, or any other system, these tokens are ready for action.</li>
   <li>
-    <strong>Online Wildcard Functionality: You can now use the macro to apply Wildcardlinks, without having to download the images.</strong>
+    <strong>Online Wildcard Functionality</strong>: You can now use the macro to apply Wildcardlinks, without having to download the images.
   </li>
 </ul>
 <p>Not sure if this module or Too-Many-Tokens-DND is right for you? Here's a quick breakdown:</p>
