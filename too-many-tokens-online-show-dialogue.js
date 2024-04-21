@@ -1,6 +1,9 @@
 const system = "dnd";
 let dropdownOptions = [];
 let filePath = `modules/too-many-tokens-online/${system}/names.txt`;
+const tooManyTokensOnlinePathPrefix = "tmtopptmtopptmtopp";
+const seperator1 = "_";
+const seperator2 = "/";
 
 // Fetch the names from the file
 fetch(filePath)
@@ -157,31 +160,49 @@ function renderDialog(options) {
                 assignTokens: {
                   label: `Assign Too-Many-Tokens to selected tokens`,
                   callback: async () => {
-                    // Get the checked checkboxes for each list
-                    const checkedCheckboxes = getCheckedCheckboxes(
-                      nameLists,
-                      selectedActor
-                    );
-                    // Create a wildcard path based on selected checkboxes
-                    const wildcardPath = createWildcardPath(
-                      nameLists,
-                      checkedCheckboxes,
-                      selectedActor
-                    );
                     const regex = new RegExp(generateRegex());
-                    console.log(regex);
+                    // console.log(regex);
                     const selectedPaths = lines.filter((link) =>
                       regex.test(link)
                     );
-                    lines.forEach((line) => {
-                      if (line.match(regex)) {
-                        console.log(
-                          `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${selectedActor}/${line}`
-                        );
-                      }
-                    });
+                    // lines.forEach((line) => {
+                    //   if (line.match(regex)) {
+                    //     console.log(
+                    //       `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${selectedActor}/${line}`
+                    //     );
+                    //   }
+                    // });
                     applyRandomTokenImages(selectedActor, selectedPaths);
                     //applyWildcardPathToActor(actor, wildcardPath);
+                  },
+                },
+                assignPrototypeTokens: {
+                  label: "Assign Too-Many-Tokens to prototype tokens",
+                  callback: async () => {
+                    const selectedTokens = canvas.tokens.controlled;
+                    if (selectedTokens.length !== 1) {
+                      ui.notifications.warn("Please select only one token.");
+                      return;
+                    }
+
+                    const regex = new RegExp(generateRegex());
+                    const tokenDocument = selectedTokens[0].document;
+                    console.log(selectedTokens[0]);
+                    console.log(tokenDocument);
+                    const actorId = tokenDocument.actorId;
+                    let baseActor = game.actors.get(actorId);
+
+                    if (!baseActor) {
+                      ui.notifications.warn(
+                        "Actor not found for the selected token."
+                      );
+                      return;
+                    }
+                    // Apply the Too-Many-Tokens wildcard path to the selected token
+                    applyTmtoWildcardPathToActor(
+                      baseActor,
+                      createTmtoWildcardImagePath(system, selectedActor, regex)
+                    );
                   },
                 },
                 cancel: {
@@ -390,4 +411,96 @@ function removeLinesEndingWithTxt(text) {
   const newText = filteredLines.join("\n");
 
   return newText;
+}
+
+function createTmtoWildcardImagePath(system, creatureName, regex) {
+  return [tooManyTokensOnlinePathPrefix, system, creatureName, regex].join(
+    seperator1
+  );
+}
+
+async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
+  try {
+    // Fetch the token images for the specified wildcard path
+    let tokenImgArray = await getLinksForCreatures(
+      getSystemFromWildcardPath(wildcardPath),
+      getCreatureNamesFromWildcardPath(wildcardPath)
+    );
+    if (tokenImgArray && tokenImgArray.length > 0) {
+      ui.notifications.info(
+        `Found ${tokenImgArray.length} images for "${wildcardPath}"`
+      );
+      // Update the prototype token with the wildcard path
+      await actor.update({
+        "prototypeToken.texture.src": wildcardPath + ".webp",
+        "prototypeToken.randomImg": true,
+      });
+    } else {
+      ui.notifications.warn(`No images found for "${wildcardPath}".`);
+    }
+  } catch (error) {
+    ui.notifications.error(`Error applying wildcard path: ${error.message}`);
+  }
+}
+
+async function getLinksForCreatures(system, creatureNames) {
+  let filePath = `modules/too-many-tokens-online/${system}/names.txt`;
+  let foundCreatureNames = [];
+
+  try {
+    let response = await fetch(filePath);
+    let text = await response.text();
+    let names = text.split("\n").filter((line) => line.trim() !== "");
+
+    creatureNames.forEach((creatureName) => {
+      if (names.includes(creatureName)) {
+        foundCreatureNames.push(creatureName);
+      } else {
+        ui.notifications.info(
+          `Could find no links for creature name: ${creatureName}`
+        );
+      }
+    });
+
+    if (foundCreatureNames.length <= 0) {
+      ui.notifications.error(`No creature names found for ${creatureNames}`);
+      return [];
+    }
+
+    let fetchPromises = foundCreatureNames.map(async (creatureName) => {
+      let wildcardFilePath = `modules/too-many-tokens-online/${system}/links/${creatureName}.txt`;
+      let response = await fetch(wildcardFilePath);
+      let text = await response.text();
+      text = removeLinesEndingWithTxt(text);
+      let lines = text.split("\n");
+      return lines.map((str) => `${creatureName}/${str}`);
+    });
+
+    return Promise.all(fetchPromises).then((results) => {
+      return results.flat();
+    });
+  } catch (error) {
+    ui.notifications.error(
+      `Error fetching names from ${filePath}: ${error.message}`
+    );
+    return [];
+  }
+}
+
+function getSystemFromWildcardPath(wildcardPath) {
+  let wildcardPathParts = removePathPrefix(wildcardPath)
+    .split(seperator1)
+    .filter((part) => part);
+  return wildcardPathParts[0];
+}
+
+function getCreatureNamesFromWildcardPath(wildcardPath) {
+  let wildcardPathParts = removePathPrefix(wildcardPath)
+    .split(seperator1)
+    .filter((part) => part);
+  return wildcardPathParts[1].split(seperator2).filter((creature) => creature);
+}
+
+function removePathPrefix(imagePath) {
+  return imagePath.replace(tooManyTokensOnlinePathPrefix, "");
 }
