@@ -109,6 +109,7 @@ function renderDialog(options) {
                 }
 
                 list.forEach((item) => {
+                  item = replaceCapitalizationAndRemoveSpaces(item, true);
                   const checkbox = document.createElement("input");
                   checkbox.type = "checkbox";
                   checkbox.name = `checkbox-${selectedActor}-${index}`;
@@ -226,7 +227,6 @@ function createTmtoWildcardImagePath(system, creatureName, regex) {
 
 async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
   try {
-    const tokenImgArray = await getLinksForCreatures(
     const regex = new RegExp(
       wildcardPath.split(seperator1).filter((part) => part)[3]
     );
