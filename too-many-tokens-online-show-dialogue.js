@@ -19,7 +19,7 @@ fetch(filePath)
 
 function renderDialog(options) {
   new Dialog({
-    title: "Select Actor",
+    title: "Select creature",
     content: `
     <form>
       <div class="form-group">
@@ -39,6 +39,10 @@ function renderDialog(options) {
         label: "Select Wildcards",
         callback: (html) => {
           const selectedActor = html.find("#actorSelect")[0].value.trim();
+          if (!selectedActor) {
+            ui.notifications.warn("Please select a creature!");
+            return;
+          }
           const wildcardFilePath = `modules/too-many-tokens-online/${system}/links/${selectedActor}.txt`;
 
           fetch(wildcardFilePath)
@@ -66,7 +70,7 @@ function renderDialog(options) {
               fullNamesList.forEach((file) => {
                 const fileNameParts = [actorNameWithoutSpaces];
                 fileNameParts.push(
-                  ...replaceAfterFirstDragonborn(file)
+                  ...replaceCapitalizationAndRemoveSpaces(file, false)
                     .split(/(?=[A-Z])/)
                     .filter(Boolean)
                     .map((part) => part)
@@ -81,7 +85,6 @@ function renderDialog(options) {
               });
 
               const dialogContent = document.createElement("div");
-              dialogContent.verticalAlign = "middle";
 
               nameLists.forEach((list, index) => {
                 const row = document.createElement("div");
@@ -151,7 +154,7 @@ function renderDialog(options) {
                       return;
                     }
 
-                    const regex = new RegExp(generateRegex());
+                    const regex = generateRegex();
                     const baseActor = game.actors.get(
                       selectedTokens[0].document.actorId
                     );
@@ -224,9 +227,17 @@ function createTmtoWildcardImagePath(system, creatureName, regex) {
 async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
   try {
     const tokenImgArray = await getLinksForCreatures(
+    const regex = new RegExp(
+      wildcardPath.split(seperator1).filter((part) => part)[3]
+    );
+    const tokenImgArrayUnfiltered = await getLinksForCreatures(
       getSystemFromWildcardPath(wildcardPath),
       getCreatureNamesFromWildcardPath(wildcardPath)
     );
+    const tokenImgArray = tokenImgArrayUnfiltered.filter((tokenImg) =>
+      regex.test(tokenImg)
+    );
+
     if (tokenImgArray && tokenImgArray.length > 0) {
       ui.notifications.info(
         `Found ${tokenImgArray.length} images for "${wildcardPath}"`
@@ -268,7 +279,7 @@ async function applyRandomTokenImages(selectedActor, links) {
 }
 
 function generateRegex() {
-  let regex = "";
+  let regex = ".*";
   const checkboxContainers = document.querySelectorAll(".CheckboxSubContainer");
   checkboxContainers.forEach((container, index) => {
     const checkedCheckboxes = container.querySelectorAll(
@@ -292,8 +303,8 @@ function generateRegex() {
       regex += ".*"; // Match any text between CheckboxSubContainers
     }
   });
-  regex += ""; // End of string anchor
-  return new RegExp(regex);
+  regex += ".*"; // End of string anchor
+  return regex;
 }
 
 async function getLinksForCreatures(system, creatureNames) {
@@ -355,4 +366,29 @@ function getCreatureNamesFromWildcardPath(wildcardPath) {
 
 function removePathPrefix(imagePath) {
   return imagePath.replace(tooManyTokensOnlinePathPrefix, "");
+}
+
+function replaceCapitalizationAndRemoveSpaces(creatureName, isRestoring) {
+  if (!creatureName) return "";
+  const halfOrcString = "HalfOrc";
+  const halfElfString = "HalfElf";
+  const nsfwString = "NSFW";
+  const halfOrcReplacementString = "Halforc";
+  const halfElfReplacementString = "Halfelf";
+  const nsfwReplacementString = "Nsfw";
+  creatureName = replaceAfterFirstDragonborn(creatureName);
+  if (isRestoring) {
+    return creatureName
+      .replace(halfElfReplacementString, halfElfString)
+      .replace(halfOrcReplacementString, halfOrcString)
+      .replace(nsfwReplacementString, nsfwString)
+      .replace(/([A-Z])/g, " $1")
+      .trim();
+  } else {
+    return creatureName
+      .replace(" ", "")
+      .replace(halfElfString, halfElfReplacementString)
+      .replace(halfOrcString, halfOrcReplacementString)
+      .replace(nsfwString, nsfwReplacementString);
+  }
 }
