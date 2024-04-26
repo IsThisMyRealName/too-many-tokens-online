@@ -19,8 +19,9 @@ export async function getTokenLinksFromPath(token, potentialWildcardPath) {
   const regex = new RegExp(wildcardPathParts[2]);
 
   // Use await to wait for the promise to resolve
-  let links = await getLinksForCreatures(system, creatures, regex);
-  console.log(links);
+  let links = await getLinksForCreatures(system, creatures);
+  links = links.filter((link) => regex.test(link));
+  // console.log(links);
   // applyRandomTokenImages(
   //   token,
   //   system,

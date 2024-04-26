@@ -167,7 +167,35 @@ function renderDialog(options) {
                     }
                     applyTmtoWildcardPathToActor(
                       baseActor,
-                      createTmtoWildcardImagePath(system, selectedActor, regex)
+                      createTmtoWildcardImagePath(system, selectedActor, regex),
+                      false
+                    );
+                  },
+                },
+                assignPrototypeTokensAndUpdateActor: {
+                  label:
+                    "Assign Too-Many-Tokens to prototype token and update actor image",
+                  callback: async () => {
+                    const selectedTokens = canvas.tokens.controlled;
+                    if (selectedTokens.length !== 1) {
+                      ui.notifications.warn("Please select only one token.");
+                      return;
+                    }
+
+                    const regex = generateRegex();
+                    const baseActor = game.actors.get(
+                      selectedTokens[0].document.actorId
+                    );
+                    if (!baseActor) {
+                      ui.notifications.warn(
+                        "Actor not found for the selected token."
+                      );
+                      return;
+                    }
+                    applyTmtoWildcardPathToActor(
+                      baseActor,
+                      createTmtoWildcardImagePath(system, selectedActor, regex),
+                      true
                     );
                   },
                 },
@@ -225,7 +253,11 @@ function createTmtoWildcardImagePath(system, creatureName, regex) {
   );
 }
 
-async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
+async function applyTmtoWildcardPathToActor(
+  actor,
+  wildcardPath,
+  updateActorImage
+) {
   try {
     const regex = new RegExp(
       wildcardPath.split(seperator1).filter((part) => part)[3]
@@ -242,10 +274,20 @@ async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
       ui.notifications.info(
         `Found ${tokenImgArray.length} images for "${wildcardPath}"`
       );
-      await actor.update({
-        "prototypeToken.texture.src": wildcardPath + ".webp",
-        "prototypeToken.randomImg": true,
-      });
+      if (updateActorImage) {
+        await actor.update({
+          "prototypeToken.texture.src": wildcardPath + ".webp",
+          "prototypeToken.randomImg": true,
+          img: `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${getSystemFromWildcardPath(
+            wildcardPath
+          )}/main/${tokenImgArray[0]}`,
+        });
+      } else {
+        await actor.update({
+          "prototypeToken.texture.src": wildcardPath + ".webp",
+          "prototypeToken.randomImg": true,
+        });
+      }
     } else {
       ui.notifications.warn(`No images found for "${wildcardPath}".`);
     }
