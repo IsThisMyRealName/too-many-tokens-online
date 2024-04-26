@@ -21,14 +21,18 @@ function renderDialog(options) {
   new Dialog({
     title: "Select Actor",
     content: `
-      <div>
+    <form>
+      <div class="form-group">
         <label for="actorSelect">Select an actor:</label>
-        <select id="actorSelect">
-          ${options
-            .map((option) => `<option value="${option}">${option}</option>`)
-            .join("")}
-        </select>
-      </div>
+        <input list="actorSelectList" id="actorSelect" name="actorSelect">
+          <datalist id="actorSelectList" style="max-height: 200px; overflow-y: auto!important">
+            ${options
+              .map((option) => `<option value="${option}">${option}</option>`)
+              .join("")}
+          </datalist>
+          </div>
+          </form>
+          <p style="font-style: italic; margin-top: 5px;">See all available tokens at <a href="https://toomanytokens.com/" target="_blank">toomanytokens.com</a>.</p>
     `,
     buttons: {
       select: {
