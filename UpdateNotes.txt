@@ -3,3 +3,4 @@
 - Fixed some wildcard bugs
 - Made Creature selection searchable (thanks for the suggestion brunocalado)
 - removed notifications, when placing tokens (thanks for the suggestion bsleys)
+- added update notes
