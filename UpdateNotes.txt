@@ -1,0 +1,5 @@
+1.1.0
+- Added button to update the actor image, when applying wildcard
+- Fixed some wildcard bugs
+- Made Creature selection searchable (thanks for the suggestion brunocalado)
+- removed notifications, when placing tokens (thanks for the suggestion bsleys)

@@ -132,7 +132,7 @@ export async function applyRandomTokenImages(tokenDocument, system, links) {
     await tokenDocument.update({
       "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${image}`,
     });
-    ui.notifications.info(`Token image updated: ${image}`);
+    // ui.notifications.info(`Token image updated: ${image}`);
   } catch (error) {
     ui.notifications.error(`Error updating token image: ${error.message}`);
   }
@@ -156,9 +156,9 @@ export async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
       getCreatureNamesFromWildcardPath(wildcardPath)
     );
     if (tokenImgArray && tokenImgArray.length > 0) {
-      ui.notifications.info(
-        `Found ${tokenImgArray.length} images for "${wildcardPath}"`
-      );
+      // ui.notifications.info(
+      //   `Found ${tokenImgArray.length} images for "${wildcardPath}"`
+      // );
       // Update the prototype token with the wildcard path
       await baseActor.update({
         "prototypeToken.texture.src": wildcardPath,

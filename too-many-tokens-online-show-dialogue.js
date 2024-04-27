@@ -113,7 +113,7 @@ function renderDialog(options) {
                   const checkbox = document.createElement("input");
                   checkbox.type = "checkbox";
                   checkbox.name = `checkbox-${selectedActor}-${index}`;
-                  checkbox.value = item;
+                  checkbox.value = item.replace(/\s/g, "");
                   checkbox.id = `checkbox-${selectedActor}-${index}-${item}`;
 
                   const label = document.createElement("label");
@@ -313,7 +313,7 @@ async function applyRandomTokenImages(selectedActor, links) {
       await token.document.update({
         "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${selectedActor}/${image}`,
       });
-      ui.notifications.info(`Token image updated: ${image}`);
+      // ui.notifications.info(`Token image updated: ${image}`);
     } catch (error) {
       ui.notifications.error(`Error updating token image: ${error.message}`);
     }

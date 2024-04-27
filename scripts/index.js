@@ -24,7 +24,7 @@ Hooks.on("ready", () => {
     let baseActor = game.actors.get(actorId);
 
     const tokenName = baseActor.prototypeToken.texture.src;
-    ui.notifications.info(`Found ${tokenName}`);
+    // ui.notifications.info(`Found ${tokenName}`);
     const links = await getTokenLinksFromPath(tokenDocument, tokenName);
     await applyRandomTokenImages(
       tokenDocument,
@@ -34,5 +34,4 @@ Hooks.on("ready", () => {
   });
 });
 
-ui.notifications.info(`Initialized`);
-console.log("Test");
+// ui.notifications.info(`Initialized`);
