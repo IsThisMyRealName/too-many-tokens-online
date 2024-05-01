@@ -1,32 +1,32 @@
-BarbedDevil.webp
-BarbedDevilDark (1).webp
-BarbedDevilDark (2).webp
-BarbedDevilDark (3).webp
-BarbedDevilDark (4).webp
-BarbedDevilDark (5).webp
-BarbedDevilDark (6).webp
-BarbedDevilDark (7).webp
-BarbedDevilDark (8).webp
-BarbedDevilDark (9).webp
-BarbedDevilFire (1).webp
-BarbedDevilFire (10).webp
-BarbedDevilFire (11).webp
-BarbedDevilFire (12).webp
-BarbedDevilFire (13).webp
-BarbedDevilFire (14).webp
-BarbedDevilFire (15).webp
-BarbedDevilFire (16).webp
-BarbedDevilFire (17).webp
-BarbedDevilFire (2).webp
-BarbedDevilFire (3).webp
-BarbedDevilFire (4).webp
-BarbedDevilFire (5).webp
-BarbedDevilFire (6).webp
-BarbedDevilFire (7).webp
-BarbedDevilFire (8).webp
-BarbedDevilFire (9).webp
-BarbedDevilFire(18).webp
-BarbedDevilFire(19).webp
-BarbedDevilFire(20).webp
-BarbedDevilFire(21).webp
-BarbedDevilFire(22).webp
+BarbedDevil (1).webp
+BarbedDevil (10).webp
+BarbedDevil (11).webp
+BarbedDevil (12).webp
+BarbedDevil (13).webp
+BarbedDevil (14).webp
+BarbedDevil (15).webp
+BarbedDevil (16).webp
+BarbedDevil (17).webp
+BarbedDevil (18).webp
+BarbedDevil (19).webp
+BarbedDevil (2).webp
+BarbedDevil (20).webp
+BarbedDevil (21).webp
+BarbedDevil (22).webp
+BarbedDevil (23).webp
+BarbedDevil (24).webp
+BarbedDevil (25).webp
+BarbedDevil (26).webp
+BarbedDevil (27).webp
+BarbedDevil (28).webp
+BarbedDevil (29).webp
+BarbedDevil (3).webp
+BarbedDevil (30).webp
+BarbedDevil (31).webp
+BarbedDevil (32).webp
+BarbedDevil (4).webp
+BarbedDevil (5).webp
+BarbedDevil (6).webp
+BarbedDevil (7).webp
+BarbedDevil (8).webp
+BarbedDevil (9).webp
