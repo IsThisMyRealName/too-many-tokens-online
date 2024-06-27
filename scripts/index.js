@@ -34,4 +34,19 @@ Hooks.on("ready", () => {
   });
 });
 
-// ui.notifications.info(`Initialized`);
+Hooks.once("init", () => {
+  game.settings.register("too-many-tokens-online", "loggingLevel", {
+    name: "Notifications",
+    config: true,
+    hint: "How many notifications should the module give?",
+    scope: "world",
+    type: String,
+    default: 2,
+    choices: {
+      0: "None",
+      1: "Errors only",
+      2: "Warning & Errors",
+      3: "Everything",
+    },
+  });
+});

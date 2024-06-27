@@ -1,5 +1,5 @@
 // tmtopptmtopptmtopp_dnd_Commoner/Scout_.*Male.*
-const tooManyTokensOnlinePathPrefix = "tmtopptmtopptmtopp";
+export const tooManyTokensOnlinePathPrefix = "tmtopptmtopptmtopp";
 const seperator1 = "_";
 const seperator2 = "/";
 
@@ -16,7 +16,7 @@ export async function getTokenLinksFromPath(token, potentialWildcardPath) {
   let creatures = wildcardPathParts[1]
     .split(seperator2)
     .filter((creature) => creature);
-  const regex = new RegExp(wildcardPathParts[2]);
+  const regex = new RegExp(wildcardPathParts[2], "i");
 
   // Use await to wait for the promise to resolve
   let links = await getLinksForCreatures(system, creatures);
@@ -169,5 +169,21 @@ export async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
     }
   } catch (error) {
     ui.notifications.error(`Error applying wildcard path: ${error.message}`);
+  }
+}
+
+export function showNotification(level, text) {
+  const notificationLevel = game.settings.get(
+    "too-many-tokens-online",
+    "loggingLevel"
+  );
+  if (level <= notificationLevel) {
+    if (level == 1) {
+      ui.notifications.error(text);
+    } else if (level == 2) {
+      ui.notifications.warn(text);
+    } else if (level == 3) {
+      ui.notifications.info(text);
+    }
   }
 }

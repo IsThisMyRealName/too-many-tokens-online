@@ -12,7 +12,8 @@ fetch(filePath)
     renderDialog(dropdownOptions);
   })
   .catch((error) => {
-    ui.notifications.error(
+    showNotification(
+      1,
       `Error fetching names from ${filePath}: ${error.message}`
     );
   });
@@ -40,7 +41,7 @@ function renderDialog(options) {
         callback: (html) => {
           const selectedActor = html.find("#actorSelect")[0].value.trim();
           if (!selectedActor) {
-            ui.notifications.warn("Please select a creature!");
+            showNotification(2, "Please select a creature!");
             return;
           }
           const wildcardFilePath = `modules/too-many-tokens-online/${system}/links/${selectedActor}.txt`;
@@ -51,7 +52,7 @@ function renderDialog(options) {
               text = removeLinesEndingWithTxt(text);
               const lines = text.split("\n");
               const fileList = lines.map((item) =>
-                item.replace(new RegExp(/\(.*$/, "g"), "")
+                item.replace(new RegExp(/\(.*$/, "g"), "i")
               );
 
               const nameLists = new Map();
@@ -113,7 +114,7 @@ function renderDialog(options) {
                   const checkbox = document.createElement("input");
                   checkbox.type = "checkbox";
                   checkbox.name = `checkbox-${selectedActor}-${index}`;
-                  checkbox.value = item.replace(/\s/g, "");
+                  checkbox.value = item;
                   checkbox.id = `checkbox-${selectedActor}-${index}-${item}`;
 
                   const label = document.createElement("label");
@@ -133,13 +134,14 @@ function renderDialog(options) {
                 assignTokens: {
                   label: `Assign Too-Many-Tokens to selected tokens`,
                   callback: async () => {
-                    const regex = new RegExp(generateRegex());
+                    const regex = new RegExp(generateRegex(), "i");
                     const selectedPaths = lines.filter((link) =>
                       regex.test(link)
                     );
                     if (selectedPaths.length <= 0) {
-                      ui.notifications.warn(
-                        `Could not find links with regex ${regex}. Please select other attributes.`
+                      showNotification(
+                        2,
+                        `Could not find links with regex ${regex} Please select other attributes.`
                       );
                     } else {
                       applyRandomTokenImages(selectedActor, selectedPaths);
@@ -151,7 +153,7 @@ function renderDialog(options) {
                   callback: async () => {
                     const selectedTokens = canvas.tokens.controlled;
                     if (selectedTokens.length !== 1) {
-                      ui.notifications.warn("Please select only one token.");
+                      showNotification(2, "Please select only one token.");
                       return;
                     }
 
@@ -160,7 +162,8 @@ function renderDialog(options) {
                       selectedTokens[0].document.actorId
                     );
                     if (!baseActor) {
-                      ui.notifications.warn(
+                      showNotification(
+                        2,
                         "Actor not found for the selected token."
                       );
                       return;
@@ -178,7 +181,7 @@ function renderDialog(options) {
                   callback: async () => {
                     const selectedTokens = canvas.tokens.controlled;
                     if (selectedTokens.length !== 1) {
-                      ui.notifications.warn("Please select only one token.");
+                      showNotification(2, "Please select only one token.");
                       return;
                     }
 
@@ -187,7 +190,8 @@ function renderDialog(options) {
                       selectedTokens[0].document.actorId
                     );
                     if (!baseActor) {
-                      ui.notifications.warn(
+                      showNotification(
+                        2,
                         "Actor not found for the selected token."
                       );
                       return;
@@ -211,7 +215,8 @@ function renderDialog(options) {
               );
             })
             .catch((error) => {
-              ui.notifications.error(
+              showNotification(
+                1,
                 `Error fetching wildcards from ${wildcardFilePath}: ${error.message}`
               );
             });
@@ -260,7 +265,8 @@ async function applyTmtoWildcardPathToActor(
 ) {
   try {
     const regex = new RegExp(
-      wildcardPath.split(seperator1).filter((part) => part)[3]
+      wildcardPath.split(seperator1).filter((part) => part)[3],
+      "i"
     );
     const tokenImgArrayUnfiltered = await getLinksForCreatures(
       getSystemFromWildcardPath(wildcardPath),
@@ -271,7 +277,8 @@ async function applyTmtoWildcardPathToActor(
     );
 
     if (tokenImgArray && tokenImgArray.length > 0) {
-      ui.notifications.info(
+      showNotification(
+        3,
         `Found ${tokenImgArray.length} images for "${wildcardPath}"`
       );
       if (updateActorImage) {
@@ -289,21 +296,21 @@ async function applyTmtoWildcardPathToActor(
         });
       }
     } else {
-      ui.notifications.warn(`No images found for "${wildcardPath}".`);
+      showNotification(2, `No images found for "${wildcardPath}".`);
     }
   } catch (error) {
-    ui.notifications.error(`Error applying wildcard path: ${error.message}`);
+    showNotification(1, `Error applying wildcard path: ${error.message}`);
   }
 }
 
 async function applyRandomTokenImages(selectedActor, links) {
   const selectedTokens = canvas.tokens.controlled;
   if (!selectedTokens.length) {
-    ui.notifications.warn("No tokens selected.");
+    showNotification(2, "No tokens selected.");
     return;
   }
   if (!links.length) {
-    ui.notifications.warn("No links provided.");
+    showNotification(2, "No links provided.");
     return;
   }
   selectedTokens.forEach(async (token) => {
@@ -313,9 +320,9 @@ async function applyRandomTokenImages(selectedActor, links) {
       await token.document.update({
         "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${selectedActor}/${image}`,
       });
-      // ui.notifications.info(`Token image updated: ${image}`);
+      showNotification(3, `Token image updated: ${image}`);
     } catch (error) {
-      ui.notifications.error(`Error updating token image: ${error.message}`);
+      showNotification(1, `Error updating token image: ${error.message}`);
     }
   });
 }
@@ -336,7 +343,7 @@ function generateRegex() {
         if (checkbox.value === "Any") {
           regex += ".*"; // Match any text
         } else {
-          regex += checkbox.value;
+          regex += replaceCapitalizationAndRemoveSpaces(checkbox.value, false);
         }
       });
       regex += ")";
@@ -362,14 +369,15 @@ async function getLinksForCreatures(system, creatureNames) {
       if (names.includes(creatureName)) {
         foundCreatureNames.push(creatureName);
       } else {
-        ui.notifications.info(
+        showNotification(
+          2,
           `Could find no links for creature name: ${creatureName}`
         );
       }
     });
 
     if (foundCreatureNames.length <= 0) {
-      ui.notifications.error(`No creature names found for ${creatureNames}`);
+      showNotification(2, `No creature names found for ${creatureNames}`);
       return [];
     }
 
@@ -385,7 +393,8 @@ async function getLinksForCreatures(system, creatureNames) {
     const results = await Promise.all(fetchPromises);
     return results.flat();
   } catch (error) {
-    ui.notifications.error(
+    showNotification(
+      1,
       `Error fetching names from ${filePath}: ${error.message}`
     );
     return [];
@@ -432,5 +441,21 @@ function replaceCapitalizationAndRemoveSpaces(creatureName, isRestoring) {
       .replace(halfElfString, halfElfReplacementString)
       .replace(halfOrcString, halfOrcReplacementString)
       .replace(nsfwString, nsfwReplacementString);
+  }
+}
+
+function showNotification(level, text) {
+  const notificationLevel = game.settings.get(
+    "too-many-tokens-online",
+    "loggingLevel"
+  );
+  if (level <= notificationLevel) {
+    if (level == 1) {
+      ui.notifications.error(text);
+    } else if (level == 2) {
+      ui.notifications.warn(text);
+    } else if (level == 3) {
+      ui.notifications.info(text);
+    }
   }
 }

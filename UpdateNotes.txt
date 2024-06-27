@@ -1,3 +1,7 @@
+1.1.1
+- Fixed some bugs with spaces and case sensitivity
+- Added setting for notification frequency
+
 1.1.0
 - Added button to update the actor image, when applying wildcard
 - Fixed some wildcard bugs
