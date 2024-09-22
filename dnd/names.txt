@@ -15,8 +15,8 @@ Axe Beak
 Azer
 Baboon
 Badger
-Bandit Captain
 Bandit
+Bandit Captain
 Banshee
 Barbed Devil
 Barlgura
@@ -38,8 +38,8 @@ Bone Naga
 Brass Dragon Wyrmling
 Bronze Dragon Wyrmling
 Brown Bear
-Bugbear Chief
 Bugbear
+Bugbear Chief
 Bulette
 Bullywug
 Cambion
@@ -78,10 +78,10 @@ Doppelganger
 Draft Horse
 Dretch
 Drider
+Drow
 Drow Elite Warrior
 Drow Mage
 Drow Priestess of Lolth
-Drow
 Druid
 Dryad
 Duergar
@@ -147,12 +147,12 @@ Githzerai Monk
 Githzerai Zerth
 Glabrezu
 Gladiator
+Gnoll
 Gnoll Fang of Yeenoghu
 Gnoll Pack Lord
-Gnoll
 Goat
-Goblin Boss
 Goblin
+Goblin Boss
 Gold Dragon Wyrmling
 Gorgon
 Gray Ooze
@@ -173,9 +173,9 @@ Helmed Horror
 Hezrou
 Hill Giant
 Hippogriff
+Hobgoblin
 Hobgoblin Captain
 Hobgoblin Warlord
-Hobgoblin
 Homunculus
 Hook Horror
 Hunter Shark
@@ -192,18 +192,18 @@ Kenku
 Killer Whale
 Knight
 Kobold
+Kuo-toa
 Kuo-toa Archpriest
 Kuo-toa Monitor
 Kuo-toa Whip
-Kuo-toa
 Lamia
 Lemure
 Lion
+Lizard
 Lizard King
 Lizard Queen
-Lizard
-Lizardfolk Shaman
 Lizardfolk
+Lizardfolk Shaman
 Mage
 Magma Mephit
 Magmin
@@ -216,10 +216,10 @@ Merfolk
 Merrow
 Mezzoloth
 Mimic
-Mindflayer Arcanist
 Mindflayer
-Minotaur Skeleton
+Mindflayer Arcanist
 Minotaur
+Minotaur Skeleton
 Monodrone
 Mud Mephit
 Mule
@@ -235,12 +235,12 @@ Nothic
 Nycaloth
 Ochre Jelly
 Octopus
-Ogre Zombie
 Ogre
+Ogre Zombie
 Oni
+Orc
 Orc Eye of Gruumsh
 Orc War Chief
-Orc
 Orog
 Owl
 Owlbear
@@ -260,8 +260,8 @@ Priest
 Pseudodragon
 Pteranodon
 Quadrone
-Quaggoth Thonot
 Quaggoth
+Quaggoth Thonot
 Quasit
 Quipper
 Rat
@@ -276,9 +276,9 @@ Roper
 Rug of Smothering
 Rust Monster
 Saber-Toothed Tiger
+Sahuagin
 Sahuagin Baron
 Sahuagin Priestess
-Sahuagin
 Salamander
 Satyr
 Scarecrow
@@ -286,8 +286,8 @@ Scorpion
 Scout
 Sea Hag
 Sea Horse
-Shadow Demon
 Shadow
+Shadow Demon
 Shambling Mound
 Shield Guardian
 Shrieker
@@ -335,8 +335,8 @@ Vine Blight
 Violet Fungus
 Vrock
 Vulture
-Warhorse Skeleton
 Warhorse
+Warhorse Skeleton
 Water Elemental
 Water Weird
 Weasel

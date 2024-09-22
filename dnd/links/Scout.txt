@@ -208,8 +208,8 @@ ScoutHalflingMaleMountains (3).webp
 ScoutHalflingMaleMountains (4).webp
 ScoutHalflingMaleUnderdark (1).webp
 ScoutHalflingMaleUnderdark (2).webp
-ScoutHalflingMaleUnderdarks (1).webp
-ScoutHalflingMaleUnderdarks (2).webp
+ScoutHalflingMaleUnderdark (3).webp
+ScoutHalflingMaleUnderdark (4).webp
 ScoutHalfOrcFemaleArctic (1).webp
 ScoutHalfOrcFemaleArctic (2).webp
 ScoutHalfOrcFemaleDesert (1).webp

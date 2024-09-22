@@ -1,3 +1,8 @@
+2.0.0
+- Pathfinder tokens are now released!
+- Improved macros a bit and added a second macro to use Pathfinder tokens instead of dnd tokens.
+- Updated some links/tokens
+
 1.1.1
 - Fixed some bugs with spaces and case sensitivity
 - Added setting for notification frequency

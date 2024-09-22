@@ -20,7 +20,9 @@ export async function getTokenLinksFromPath(token, potentialWildcardPath) {
 
   // Use await to wait for the promise to resolve
   let links = await getLinksForCreatures(system, creatures);
-  links = links.filter((link) => regex.test(link));
+  links = links
+    .filter((link) => regex.test(link))
+    .map((link) => link.replace(/\r/g, ""));
   // console.log(links);
   // applyRandomTokenImages(
   //   token,
@@ -52,7 +54,10 @@ export async function getLinksForCreatures(system, creatureNames) {
   try {
     let response = await fetch(filePath);
     let text = await response.text();
-    let names = text.split("\n").filter((line) => line.trim() !== "");
+    let names = text
+      .split("\n")
+      .filter((line) => line.trim() !== "")
+      .map((line) => line.replace(/\r/g, ""));
 
     creatureNames.forEach((creatureName) => {
       if (names.includes(creatureName)) {
@@ -130,7 +135,9 @@ export async function applyRandomTokenImages(tokenDocument, system, links) {
   const image = links[imageChoice];
   try {
     await tokenDocument.update({
-      "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${image}`,
+      "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${getFolderStructureFromSystem(
+        system
+      )}${image}`,
     });
     // ui.notifications.info(`Token image updated: ${image}`);
   } catch (error) {
@@ -169,6 +176,14 @@ export async function applyTmtoWildcardPathToActor(actor, wildcardPath) {
     }
   } catch (error) {
     ui.notifications.error(`Error applying wildcard path: ${error.message}`);
+  }
+}
+
+export function getFolderStructureFromSystem(system) {
+  if (system == "dnd") {
+    return "";
+  } else {
+    return "Tokens/";
   }
 }
 

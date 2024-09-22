@@ -180,6 +180,7 @@ ZombieHalfElfFemale (20).webp
 ZombieHalfElfFemale (21).webp
 ZombieHalfElfFemale (22).webp
 ZombieHalfElfFemale (23).webp
+ZombieHalfElfFemale (24).webp
 ZombieHalfElfFemale (3).webp
 ZombieHalfElfFemale (4).webp
 ZombieHalfElfFemale (5).webp
@@ -187,7 +188,6 @@ ZombieHalfElfFemale (6).webp
 ZombieHalfElfFemale (7).webp
 ZombieHalfElfFemale (8).webp
 ZombieHalfElfFemale (9).webp
-ZombieHalfElfFemale.webp
 ZombieHalfElfMale (1).webp
 ZombieHalfElfMale (10).webp
 ZombieHalfElfMale (11).webp
@@ -330,6 +330,7 @@ ZombieHumanMale (15).webp
 ZombieHumanMale (16).webp
 ZombieHumanMale (17).webp
 ZombieHumanMale (18).webp
+ZombieHumanMale (19).webp
 ZombieHumanMale (2).webp
 ZombieHumanMale (3).webp
 ZombieHumanMale (4).webp
@@ -338,7 +339,6 @@ ZombieHumanMale (6).webp
 ZombieHumanMale (7).webp
 ZombieHumanMale (8).webp
 ZombieHumanMale (9).webp
-ZombieHumanMale.webp
 ZombieTieflingFemale (1).webp
 ZombieTieflingFemale (10).webp
 ZombieTieflingFemale (11).webp

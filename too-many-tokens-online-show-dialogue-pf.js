@@ -1,4 +1,4 @@
-const system = "dnd";
+const system = "pf";
 const tooManyTokensOnlinePathPrefix = "tmtopptmtopptmtopp";
 const seperator1 = "_";
 const seperator2 = "/";
@@ -367,7 +367,10 @@ async function getLinksForCreatures(system, creatureNames) {
   try {
     const response = await fetch(filePath);
     const text = await response.text();
-    const names = text.split("\n").filter((line) => line.trim() !== "");
+    const names = text
+      .split("\n")
+      .filter((line) => line.trim() !== "")
+      .map((line) => line.replace(/\r/g, ""));
 
     creatureNames.forEach((creatureName) => {
       if (names.includes(creatureName)) {
