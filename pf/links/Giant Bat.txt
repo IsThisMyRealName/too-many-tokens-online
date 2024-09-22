@@ -1,0 +1,26 @@
+GiantBatCave (1).webp
+GiantBatCave (2).webp
+GiantBatCave (3).webp
+GiantBatCave (4).webp
+GiantBatCave (5).webp
+GiantBatCave (6).webp
+GiantBatCave (7).webp
+GiantBatForest (1).webp
+GiantBatForest (2).webp
+GiantBatForest (3).webp
+GiantBatForest (4).webp
+GiantBatForest (5).webp
+GiantBatForest (6).webp
+GiantBatForest (7).webp
+GiantBatForest (8).webp
+GiantBatForest (9).webp
+GiantBatUrban (1).webp
+GiantBatUrban (2).webp
+GiantBatUrban (3).webp
+GiantBatUrban (4).webp
+GiantBatUrban (5).webp
+GiantBatUrban (6).webp
+GiantBatUrban (7).webp
+GiantBatUrban (8).webp
+GiantBatUrban (9).webp
+Prompts.txt

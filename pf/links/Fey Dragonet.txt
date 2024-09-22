@@ -1,0 +1,19 @@
+FeyDragonetBlue (1).webp
+FeyDragonetBlue (2).webp
+FeyDragonetBlue (3).webp
+FeyDragonetBlue (4).webp
+FeyDragonetBlue (5).webp
+FeyDragonetBlue (6).webp
+FeyDragonetGreen (1).webp
+FeyDragonetGreen (2).webp
+FeyDragonetGreen (3).webp
+FeyDragonetGreen (4).webp
+FeyDragonetGreen (5).webp
+FeyDragonetGreen (6).webp
+FeyDragonetPurple (1).webp
+FeyDragonetPurple (2).webp
+FeyDragonetPurple (3).webp
+FeyDragonetPurple (4).webp
+FeyDragonetPurple (5).webp
+FeyDragonetPurple (6).webp
+Prompts.txt

@@ -1,0 +1,234 @@
+Aapoph Serpentfolk
+Air Scamp
+Aiuvarin Elementalist
+Animated Armor
+Animated Broom
+Animated Statue
+Arbiter
+Arboreal Warden
+Army Ant Swarm
+Athamaru
+Azarketi Crab Catcher
+Azuretzi
+Barghest
+Basilisk
+Boar
+Boggard Scout
+Boggard Swampseer
+Boggard Warrior
+Bogwid
+Bottlenose Dolphin
+Brimorak
+Brine Shark
+Bugbear Prowler
+Bugbear Tormentor
+Cacodaemon
+Caligni Dancer
+Caligni Hunter
+Caligni Skulker
+Cassisian
+Catfolk Pouncer
+Centaur Herbalist
+Centipede Swarm
+Chupacabra
+Cinder Rat
+Cockatrice
+Coil Spy
+Commoner
+Compsognathus
+Crawling Hand
+Crocodile
+Cyclops
+Daeodon
+Deinonychus
+Dero Magister
+Dero Stalker
+Dero Strangler
+Dhampir Wizard
+Dire Wolf
+Draxie
+Dromaar Mountaineer
+Dryad
+Duskwalker Ghost Hunter
+Dwarf Stonecaster
+Dwarf Warrior
+Eagle
+Earth Scamp
+Electric Eel
+Elf Ranger
+Fey Dragonet
+Fire Scamp
+Flame Drake
+Flash Beetle
+Forest Troll
+Fungus Leshy
+Gancanagh
+Gargoyle
+Ghost Commoner
+Ghoul Soldier
+Ghoul Stalker
+Giant Ant
+Giant Bat
+Giant Centipede
+Giant Crawling Hand
+Giant Eagle
+Giant Frilled Lizard
+Giant Gecko
+Giant Mantis
+Giant Monitor Lizard
+Giant Moray Eel
+Giant Rat
+Giant Scorpion
+Giant Stag Beetle
+Giant Viper
+Giant Wasp
+Globster
+Gnome Bard
+Goblin Commando
+Goblin Dog
+Goblin Pyro
+Goblin War Chanter
+Goblin Warrior
+Gorilla
+Gourd Leshy
+Great White Shark
+Griffon
+Grindylow
+Grizzly Bear
+Grothlut
+Guard Dog
+Halfling Street Watcher
+Halfling Troublemaker
+Harpy
+Hell Hound
+Herexen
+Hippocampus
+Hippogriff
+Hobgoblin Archer
+Hobgoblin Soldier
+Homunculus
+Hryngar Bombardier
+Hryngar Sharpshooter
+Hryngar Taskmaster
+Hunting Spider
+Hyaenodon
+Hyena
+Imp
+Jaathoom
+Jann
+Jinkin
+Kholo Bonekeeper
+Kholo Hunter
+Kholo Sergeant
+Kobold Cavern Mage
+Kobold Scout
+Kobold Warrior
+Larval Ofalth
+Lawbringer Warpriest
+Leaf Leshy
+Leopard
+Lion
+Living Landslide
+Living Waterfall
+Living Whirlwind
+Living Wildfire
+Lizardfolk Defender
+Lizardfolk Scout
+Lizardfolk Stargazer
+Lyrakien
+Merfolk Warrior
+Merfolk Wavecaller
+Minotaur Hunter
+Mitflit
+Naiad
+Nosoi
+Ogre Glutton
+Ogre Warrior
+Orc Commander
+Orc Scrapper
+Orc Veteran
+Orca
+Ort
+Pegasus
+Phantom Knight
+Pipefox
+Pitborn Adept
+Pixie
+Plague Zombie
+Poltergeist
+Poracha
+Pteranodon
+Pugwampi
+Pusk
+Python
+Qarna
+Raktavarna
+Rat Swarm
+Ratfolk Grenadier
+Redcap
+Rhinoceros
+Riding Dog
+Riding Horse
+Riding Pony
+River Drake
+Satyr
+Scarecrow
+Scorpion Swarm
+Sea Hag
+Sedacthy Marauder
+Sedacthy Scout
+Sewer Ooze
+Shadow
+Sinspawn
+Skeletal Champion
+Skeletal Giant
+Skeletal Horse
+Skeleton Guard
+Slurk
+Snapping Flytrap
+Sod Hound
+Soulbound Doll
+Spider Swarm
+Sprigjack
+Sprite
+String Slime
+Sweet Hag
+Tengu Sneak
+Tiger
+Tomb Jelly
+Tooth Fairy
+Tooth Fairy Swarm
+Twigjack
+Ugothol
+Umbral Gnome Rockwarden
+Umbral Gnome Scout
+Umbral Gnome Warrior
+Unicorn
+Vampire Bat Swarm
+Vampire Servitor
+Velociraptor
+Viper
+Voidworm
+Vordine
+War Horse
+War Pony
+Warg
+Wasp Swarm
+Water Scamp
+Werebear
+Wererat
+Weretiger
+Werewolf
+Wight
+Witchwarg
+Wolf
+Woolly Rhinoceros
+Xulgath Leader
+Xulgath Skulker
+Xulgath Warrior
+Yeti
+Zephyr Hawk
+Zoaem
+Zombie Brute
+Zombie Shambler
+Zyss Serpentfolk

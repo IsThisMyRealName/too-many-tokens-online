@@ -33,7 +33,7 @@ function renderDialog(options) {
           </datalist>
           </div>
           </form>
-          <p style="font-style: italic; margin-top: 5px;">See all available tokens at <a href="https://toomanytokens.com/" target="_blank">toomanytokens.com</a>.</p>
+          <p style="font-style: italic; margin-top: 5px;">See all available tokens at <a href="https://toomanytokens.com/system=${system}" target="_blank">toomanytokens.com</a>.</p>
     `,
     buttons: {
       select: {
@@ -287,7 +287,9 @@ async function applyTmtoWildcardPathToActor(
           "prototypeToken.randomImg": true,
           img: `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${getSystemFromWildcardPath(
             wildcardPath
-          )}/main/${tokenImgArray[0]}`,
+          )}/main/${getFolderStructureFromSystem(
+            getSystemFromWildcardPath(wildcardPath)
+          )}${tokenImgArray[0]}`,
         });
       } else {
         await actor.update({
@@ -318,7 +320,9 @@ async function applyRandomTokenImages(selectedActor, links) {
     const image = links[imageChoice];
     try {
       await token.document.update({
-        "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${selectedActor}/${image}`,
+        "texture.src": `https://raw.githubusercontent.com/IsThisMyRealName/too-many-tokens-${system}/main/${getFolderStructureFromSystem(
+          system
+        )}${selectedActor}/${image}`,
       });
       showNotification(3, `Token image updated: ${image}`);
     } catch (error) {
@@ -406,6 +410,14 @@ function getSystemFromWildcardPath(wildcardPath) {
     .split(seperator1)
     .filter((part) => part);
   return wildcardPathParts[0];
+}
+
+function getFolderStructureFromSystem(system) {
+  if (system == "dnd") {
+    return "";
+  } else {
+    return "Tokens/";
+  }
 }
 
 function getCreatureNamesFromWildcardPath(wildcardPath) {

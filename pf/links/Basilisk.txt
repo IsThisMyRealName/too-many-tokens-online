@@ -1,0 +1,13 @@
+BasiliskBlack (1).webp
+BasiliskBlack (2).webp
+BasiliskBlack (3).webp
+BasiliskBlack (4).webp
+BasiliskGreen (1).webp
+BasiliskGreen (2).webp
+BasiliskGreen (3).webp
+BasiliskGreen (4).webp
+BasiliskGreen (5).webp
+BasiliskGreen (6).webp
+BasiliskGreen (7).webp
+BasiliskGreen (8).webp
+Prompts.txt

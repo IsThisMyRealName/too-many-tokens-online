@@ -1,0 +1,18 @@
+AiuvarinElementalistLightningFemale (1).webp
+AiuvarinElementalistLightningFemale (2).webp
+AiuvarinElementalistLightningFemale (3).webp
+AiuvarinElementalistLightningMale (1).webp
+AiuvarinElementalistLightningMale (2).webp
+AiuvarinElementalistNocastFemale (1).webp
+AiuvarinElementalistNocastFemale (2).webp
+AiuvarinElementalistShield (1).webp
+AiuvarinElementalistShieldFemale (1).webp
+AiuvarinElementalistShieldFemale (2).webp
+AiuvarinElementalistShieldFemale (3).webp
+AiuvarinElementalistWindMale (1).webp
+AiuvarinElementalistWindMale (2).webp
+AiuvarinElementalistWindMale (3).webp
+AiuvarinElementalistWindMale (4).webp
+AiuvarinElementalistWindMale (5).webp
+AiuvarinElementalistWindMale (6).webp
+Prompts.txt

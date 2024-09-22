@@ -1,0 +1,21 @@
+Promts.txt
+SpriteFemale (1).webp
+SpriteFemale (2).webp
+SpriteFemale (3).webp
+SpriteFemale (4).webp
+SpriteFemale (5).webp
+SpriteFemale (6).webp
+SpriteFemale (7).webp
+SpriteMale (1).webp
+SpriteMale (10).webp
+SpriteMale (11).webp
+SpriteMale (12).webp
+SpriteMale (13).webp
+SpriteMale (2).webp
+SpriteMale (3).webp
+SpriteMale (4).webp
+SpriteMale (5).webp
+SpriteMale (6).webp
+SpriteMale (7).webp
+SpriteMale (8).webp
+SpriteMale (9).webp

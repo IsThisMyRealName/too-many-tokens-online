@@ -1,0 +1,22 @@
+DeroMagisterFemale (1).webp
+DeroMagisterFemale (10).webp
+DeroMagisterFemale (11).webp
+DeroMagisterFemale (2).webp
+DeroMagisterFemale (3).webp
+DeroMagisterFemale (4).webp
+DeroMagisterFemale (5).webp
+DeroMagisterFemale (6).webp
+DeroMagisterFemale (7).webp
+DeroMagisterFemale (8).webp
+DeroMagisterFemale (9).webp
+DeroMagisterMale (1).webp
+DeroMagisterMale (10).webp
+DeroMagisterMale (2).webp
+DeroMagisterMale (3).webp
+DeroMagisterMale (4).webp
+DeroMagisterMale (5).webp
+DeroMagisterMale (6).webp
+DeroMagisterMale (7).webp
+DeroMagisterMale (8).webp
+DeroMagisterMale (9).webp
+Prompts.txt

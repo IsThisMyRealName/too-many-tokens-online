@@ -1,0 +1,19 @@
+HarpyFemale (1).webp
+HarpyFemale (2).webp
+HarpyFemale (3).webp
+HarpyFemale (4).webp
+HarpyFemale (5).webp
+HarpyFemale (6).webp
+HarpyFemale (7).webp
+HarpyMale (1).webp
+HarpyMale (10).webp
+HarpyMale (11).webp
+HarpyMale (2).webp
+HarpyMale (3).webp
+HarpyMale (4).webp
+HarpyMale (5).webp
+HarpyMale (6).webp
+HarpyMale (7).webp
+HarpyMale (8).webp
+HarpyMale (9).webp
+Prompts.txt

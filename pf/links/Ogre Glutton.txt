@@ -1,0 +1,24 @@
+OgreGluttonFemale (1).webp
+OgreGluttonFemale (2).webp
+OgreGluttonFemale (3).webp
+OgreGluttonFemale (4).webp
+OgreGluttonFemale (5).webp
+OgreGluttonFemale (6).webp
+OgreGluttonFemale (7).webp
+OgreGluttonFemale (8).webp
+OgreGluttonFemale (9).webp
+OgreGluttonMale (1).webp
+OgreGluttonMale (10).webp
+OgreGluttonMale (11).webp
+OgreGluttonMale (12).webp
+OgreGluttonMale (13).webp
+OgreGluttonMale (14).webp
+OgreGluttonMale (2).webp
+OgreGluttonMale (3).webp
+OgreGluttonMale (4).webp
+OgreGluttonMale (5).webp
+OgreGluttonMale (6).webp
+OgreGluttonMale (7).webp
+OgreGluttonMale (8).webp
+OgreGluttonMale (9).webp
+Prompts.txt
