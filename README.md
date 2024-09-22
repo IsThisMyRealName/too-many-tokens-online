@@ -1,5 +1,5 @@
-<h3>You don't need this and Too-Many-Tokens-DND. This is smaller file size, and online</h3>
-<p>Introducing the Online Too-Many-Tokens Module, your gateway to an extensive collection of over 16,000 tokens meticulously curated for monsters below CR 10 from the Monster Manual. Designed to seamlessly integrate into any system, this module offers unparalleled versatility for your virtual tabletop experience.</p>
+<h3>You don't need this and Too-Many-Tokens-DND/Too-Many-Tokens-PF. This is smaller file size, and online</h3>
+<p>Introducing the Too-Many-Tokens-Online Module, your gateway to an extensive collection of over 16,000 tokens for DND and over 7,600 tokens for PF2e meticulously curated for monsters below CR 10 from the Monster Manual and the monsters from level 5 and downwards of the Monster Core. Designed to seamlessly integrate into any system, this module offers unparalleled versatility for your virtual tabletop experience.</p>
 <p>Explore a vast array of tokens tailored to your needs, accessible at your fingertips through our dedicated website: <a target="_new" href="https://toomanytokens.com">TooManyTokens.com</a>.</p>
 <p>Key Features:</p>
 <ul>
