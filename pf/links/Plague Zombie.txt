@@ -1,3 +1,10 @@
+PlagueZombieAiuvarinFemale (1).webp
+PlagueZombieAiuvarinFemale (2).webp
+PlagueZombieAiuvarinFemale (3).webp
+PlagueZombieAiuvarinFemale (4).webp
+PlagueZombieAiuvarinMale (1).webp
+PlagueZombieAiuvarinMale (2).webp
+PlagueZombieAiuvarinMale (3).webp
 PlagueZombieDwarfFemale (1).webp
 PlagueZombieDwarfFemale (2).webp
 PlagueZombieDwarfMale (1).webp
@@ -20,13 +27,6 @@ PlagueZombieGoblinMale (1).webp
 PlagueZombieGoblinMale (2).webp
 PlagueZombieGoblinMale (3).webp
 PlagueZombieGoblinMale (4).webp
-PlagueZombieHalfElfFemale (1).webp
-PlagueZombieHalfElfFemale (2).webp
-PlagueZombieHalfElfFemale (3).webp
-PlagueZombieHalfElfFemale (4).webp
-PlagueZombieHalfElfMale (1).webp
-PlagueZombieHalfElfMale (2).webp
-PlagueZombieHalfElfMale (3).webp
 PlagueZombieHalflingFemale (1).webp
 PlagueZombieHalflingFemale (2).webp
 PlagueZombieHalflingFemale (3).webp

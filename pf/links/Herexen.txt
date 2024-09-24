@@ -1,3 +1,9 @@
+HerexenAiuvarinFemale (1).webp
+HerexenAiuvarinFemale (2).webp
+HerexenAiuvarinMale (1).webp
+HerexenAiuvarinMale (2).webp
+HerexenAiuvarinMale (3).webp
+HerexenAiuvarinMale (4).webp
 HerexenDwarfFemale (1).webp
 HerexenDwarfFemale (2).webp
 HerexenDwarfFemale (3).webp
@@ -44,12 +50,6 @@ HerexenGoblinMale (4).webp
 HerexenGoblinMale (5).webp
 HerexenGoblinMale (6).webp
 HerexenGoblinMale (7).webp
-HerexenHalfElfFemale (1).webp
-HerexenHalfElfFemale (2).webp
-HerexenHalfElfMale (1).webp
-HerexenHalfElfMale (2).webp
-HerexenHalfElfMale (3).webp
-HerexenHalfElfMale (4).webp
 HerexenHalflingFemale (1).webp
 HerexenHalflingFemale (2).webp
 HerexenHalflingFemale (3).webp
