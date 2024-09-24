@@ -1,3 +1,8 @@
+2.0.1
+- Small fixes in spelling
+- Changed HalfElf to Aiuvarin for Pathfinder tokens
+- Packs folder to packs to hopefully fix missing macros for linux users
+
 2.0.0
 - Pathfinder tokens are now released!
 - Improved macros a bit and added a second macro to use Pathfinder tokens instead of dnd tokens.
