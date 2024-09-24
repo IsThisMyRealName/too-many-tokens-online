@@ -24,7 +24,7 @@ function renderDialog(options) {
     content: `
     <form>
       <div class="form-group">
-        <label for="actorSelect">Select an actor:</label>
+        <label for="actorSelect">Enter a ${system.toUpperCase()} creature name:</label>
         <input list="actorSelectList" id="actorSelect" name="actorSelect">
           <datalist id="actorSelectList" style="max-height: 200px; overflow-y: auto!important">
             ${options
