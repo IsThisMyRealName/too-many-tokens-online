@@ -248,7 +248,9 @@ function replaceAfterFirstDragonborn(inputString) {
 
 function removeLinesEndingWithTxt(text) {
   const lines = text.split("\n");
-  const filteredLines = lines.filter((line) => !line.trim().endsWith(".txt"));
+  const filteredLines = lines.filter(
+    (line) => !line.trim().endsWith(".txt") && line.trim().length > 0
+  );
   return filteredLines.join("\n");
 }
 
